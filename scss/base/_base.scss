@@ -1,0 +1,32 @@
+$base-font-size:15px;
+$base-font-family:"Poppins-Bold",sans-serif;
+$base-font-color:#000;
+
+/* Colors */
+
+$yellow-color:#ffa600 !important;
+
+body
+{
+	font-size:$base-font-size;
+	color:$base-font-color;
+	font-family:$base-font-family;
+}
+
+@font-face {
+    font-family: "Poppins-Bold";
+    src: url('../font/Poppins-Bold.eot?#iefix') format('embedded-opentype'), url('../font/Poppins-Bold.ttf') format('truetype');
+}
+
+
+a:hover{
+	color:$yellow-color;
+}
+
+
+
+
+
+.bg-orange{
+	background-color: $yellow-color;
+}

@@ -1,0 +1,27 @@
+@mixin round { 
+  -webkit-border-radius: 12px; 
+  -moz-border-radius: 12px; 
+  border-radius: 12px; 
+}
+
+
+@mixin gradient { 
+  background: -webkit-linear-gradient(to top, rgba(148, 85, 166, 0.5) 40%, rgba(86, 130, 190, 0.96) 100%);
+  background: -moz-linear-gradient(to top, rgba(148, 85, 166, 0.5) 40%, rgba(86, 130, 190, 0.96) 100%);
+  background: -o-linear-gradient(to top, rgba(148, 85, 166, 0.5) 40%, rgba(86, 130, 190, 0.96) 100%);
+  background: linear-gradient(to top, rgba(148, 85, 166, 0.5) 40%, rgba(86, 130, 190, 0.96) 100%);  
+}
+
+@mixin flex{
+	display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box; /* OLD - Firefox 19- */
+    display: -ms-flexbox; /* TWEENER - IE 10 */
+    display: -webkit-flex; /* NEW - Chrome */
+    display: flex; /* NEW, Opera 12.1, Firefox 20+ */
+}
+
+@mixin small() {
+    @media only screen and (max-width: 992px) {
+        @content;
+    }
+}

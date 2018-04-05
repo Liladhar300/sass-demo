@@ -1,0 +1,95 @@
+/* Base */
+@import 'base/_base.scss';
+@import 'base/_buttons.scss';
+@import 'base/_typography.scss';
+
+/* Modules */
+@import 'modules/_mixins.scss';
+
+/* Layouts */
+
+@import 'layouts/_header.scss';
+@import 'layouts/_footer.scss';
+
+
+.wrapper {
+	position: relative;
+	height:100%;
+}
+
+.wrapper .video-overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    @include gradient;
+}
+
+.display-table {
+    @include flex;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+
+.verticle-middle {
+    margin: 0 auto;
+}
+
+.video-container {
+  position: relative;
+}
+
+video {
+  height: auto;
+  vertical-align: middle;
+  width: 100%;
+}
+// .overlay-desc {
+//   background: linear-gradient(to top, rgba(148, 85, 166, 0.5) 40%, rgba(86, 130, 190, 0.96) 100%);
+//   position: absolute;
+//   top: 0; right: 0; bottom: 0; left: 0;
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+// }
+
+.navbar-transparent{
+	position: absolute;
+    width: 100%;
+    z-index: 30;
+    background-color: transparent;
+    border-color: transparent;
+}
+
+
+.video-wrap {
+  width: 100%;
+  max-height: 750px;
+  overflow: hidden;
+  position: relative;
+  top: 0;
+  right: 0;
+  z-index: -100;
+}
+
+.bg-h1{
+  @include round;
+}
+
+@include small {
+    // css code for small screens go here
+  .bg-h1{
+    background-color: red !important;
+  }
+}
+
+
+h1{
+  color: $yellow-color;
+  padding: 50px;
+  border: 1px solid #000;
+  @include gradient;
+}
